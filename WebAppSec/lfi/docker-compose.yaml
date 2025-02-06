@@ -1,0 +1,8 @@
+services:
+  lfi-lab:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./apache-logs:/var/log/apache2
